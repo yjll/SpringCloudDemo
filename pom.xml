@@ -7,6 +7,11 @@
     <groupId>com.yjll</groupId>
     <artifactId>SpringCloudDemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>consumer</module>
+        <module>producer</module>
+        <module>eureka</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>SpringCloudDemo</name>
@@ -16,6 +21,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.1.RELEASE</version>
+        <relativePath />
     </parent>
 
     <properties>
