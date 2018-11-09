@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date: 2018/11/8 15:18
  * @description:
  */
-@FeignClient(name= "producer")
+@FeignClient(name= "producer",fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
+
     @RequestMapping(value = "/hello")
     String hello(@RequestParam(value = "name") String name);
+
+
 }
